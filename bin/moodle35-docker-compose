@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -e
-
+export COMPOSE_PROJECT_NAME="moodle35"
 export MOODLE_DOCKER_WWWROOT="/Users/nicosoft/dev/moodle35"
 export MOODLE_DOCKER_DB="mysql"
+export MOODLE_DOCKER_WEB_PORT=8081
 
 if [ ! -d "$MOODLE_DOCKER_WWWROOT" ];
 then
